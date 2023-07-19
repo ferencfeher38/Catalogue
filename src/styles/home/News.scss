@@ -1,0 +1,41 @@
+@import "../../styles/common/Colors.scss";
+@import "../../styles/common/Fonts.scss";
+@import "../../styles/common/Gaps.scss";
+
+.news-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  max-width: 80%;
+  margin-top: 75px;
+  margin-bottom: 75px;
+  gap: $gap-4;
+  font-family: $font-2;
+}
+
+.news-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  background-color: $color-white;
+  box-shadow: 5px 5px 20px 5px rgba(0, 0, 0, 0.25);
+  height: fit-content;
+
+  img {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+  }
+
+  .title {
+    margin-top: 10px;
+    margin-bottom: 15px;
+    font-size: 1.25rem;
+    font-weight: bold;
+  }
+
+  .description {
+    font-size: 1rem;
+    text-align: justify;
+  }
+}

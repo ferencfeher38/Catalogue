@@ -1,0 +1,48 @@
+@import "../../styles/common/Colors.scss";
+@import "../../styles/common/Fonts.scss";
+@import "../../styles/common/Gaps.scss";
+
+.product-list {
+  display: flex;
+  flex-direction: column;
+  padding: 50px;
+  gap: 50px;
+  padding-top: 150px;
+  font-family: $font-2;
+
+  .product-item {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 5px 5px 20px 5px rgba(0, 0, 0, 0.25);
+    padding: 30px;
+    background-color: $color-white;
+
+    @media only screen and (max-width: 1200px) {
+      flex-wrap: wrap;
+      flex-direction: column;
+
+      img {
+        height: auto;
+        width: 100%;
+        max-width: 500px;
+      }
+    }
+
+    .fa-shopping-cart {
+      cursor: pointer;
+    }
+
+    .fa-shopping-cart:hover {
+      opacity: 0.8;
+    }
+
+    img {
+      height: auto;
+      width: 100%;
+      max-width: 200px;
+    }
+  }
+}

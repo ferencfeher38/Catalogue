@@ -1,0 +1,26 @@
+@import "../../styles/common/Colors.scss";
+@import "../../styles/common/Fonts.scss";
+
+.banner-container {
+  background-color: $color-dark-gray;
+  color: $color-white;
+  font-family: $font-2;
+  width: 100%;
+
+  .banner-item {
+    img {
+      object-fit: cover;
+    }
+
+    .banner-content {
+      width: 100%;
+      padding: 25px;
+
+      .name {
+        font-size: 1.25rem;
+        font-weight: bold;
+        margin-bottom: 10px;
+      }
+    }
+  }
+}

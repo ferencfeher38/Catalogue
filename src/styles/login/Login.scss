@@ -1,0 +1,8 @@
+@import "../../styles/common/Colors.scss";
+@import "../../styles/common/Fonts.scss";
+@import "../../styles/common/Gaps.scss";
+
+.login-container {
+  height: 100vh;
+  background-color: $color-light-gray;
+}
